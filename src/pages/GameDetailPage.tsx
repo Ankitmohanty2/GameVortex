@@ -7,6 +7,8 @@ import useGame from '../hooks/useGame';
 import GameTrailer from '../components/GameTrailer';
 import GameScreenShot from '../components/GameScreenShot';
 
+// this is a page that shows the details of a game
+
 const GameDetailPage = () => {
   const { slug } = useParams();
   const { data: game, isLoading, error } = useGame(slug!);
