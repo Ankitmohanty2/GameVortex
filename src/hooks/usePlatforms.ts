@@ -4,6 +4,8 @@ import platforms from '../data/platforms';
 import Platform from '../entities/Platform';
 import APIClient from '../services/api-client';
 
+
+// this is a hook that fetches platforms
 const apiClient = new APIClient<Platform>('/platforms/lists/parents');
 const usePlatforms = () =>
   useQuery({

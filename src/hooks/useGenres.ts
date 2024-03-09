@@ -4,6 +4,7 @@ import genres from '../data/genres';
 import APIClient from '../services/api-client';
 import Genre from '../entities/Genre';
 
+// this is a hook that fetches genres
 const apiClient = new APIClient<Genre>('/genres');
 const useGenres = () =>
   useQuery({
