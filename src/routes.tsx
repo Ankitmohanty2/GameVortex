@@ -4,6 +4,7 @@ import GameDetailPage from './pages/GameDetailPage';
 import Homepage from './pages/Homepage';
 import Layouts from './pages/Layouts';
 
+// this router is used to define the routes of the app
 const router = createBrowserRouter([
   {
     path: '/',

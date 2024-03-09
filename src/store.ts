@@ -1,5 +1,7 @@
 import { create } from 'zustand';
 
+
+// 1. Create a store
 interface GameQuery {
   genreId?: number;
   platformId?: number;
@@ -7,6 +9,7 @@ interface GameQuery {
   searchText?: string;
 }
 
+// this is a store that holds the game query
 interface GameQueryStore {
   gameQuery: GameQuery;
   setSearchText: (searchText: string) => void;
