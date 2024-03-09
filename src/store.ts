@@ -18,6 +18,7 @@ interface GameQueryStore {
   setSortOrder: (sortOrder: string) => void;
 }
 
+// 2. Create a store
 const useGameQueryStore = create<GameQueryStore>((set) => ({
   gameQuery: {},
   setSearchText: (searchText) => set(() => ({ gameQuery: { searchText } })),
